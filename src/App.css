@@ -1,0 +1,49 @@
+.app {
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+  background-color: aqua;
+}
+
+.add-todo {
+  margin-bottom: 20px;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todo-list input {
+  margin-right: 10px;
+}
+
+.todo-list span {
+  flex-grow: 1;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.todo-list .done {
+  text-decoration: line-through;
+  color: #888;
+}
+
+button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.addbutton {
+  background-color: black;
+}
