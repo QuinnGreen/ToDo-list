@@ -16,11 +16,6 @@ function App() {
     setToDo(toDo.filter((toDo) => toDo.id !== id));
   };
   
-  // const toggleDone = (id) => {
-  //   setToDo(
-  //     toDo.map((toDo) => 
-  //     toDo.id ? { ...toDo, done: !toDo.done } : toDo ))
-  // };
 
   const toggleDone = (id) => {
     setToDo(
@@ -42,7 +37,7 @@ function App() {
         />
         <button className='addbutton' onClick={addToDo}>Add</button>
       </div>
-      <ul className="toDo-list">
+      <ul className="toDoList">
         {toDo.map((toDo) => (
           <li key={toDo.id}>
             <input type="checkbox" checked={toDo.done} onChange={() => toggleDone(toDo.id)}/>

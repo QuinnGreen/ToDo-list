@@ -1,6 +1,16 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
 .app {
   text-align: center;
   background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  width: 100vh;
 }
 
 .todo-list {
@@ -12,9 +22,8 @@
   align-items: center;
 }
 
-.todo-list .done {
-  text-decoration: line-through;
-  color: #888;
+.toDoList li.done span {
+  text-decoration: line-through; /* Add line-through for items with the "done" class */
 }
 
 button {
