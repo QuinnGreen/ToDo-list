@@ -38,11 +38,12 @@ function App() {
         <button className='addbutton' onClick={addToDo}>Add</button>
       </div>
       <ul className="toDoList">
-        {toDo.map((toDo) => (
-          <li key={toDo.id}>
-            <input type="checkbox" checked={toDo.done} onChange={() => toggleDone(toDo.id)}/>
-            <span className={toDo.done ? 'done' : ''}>{toDo.task}</span>
-            <button className='addbutton' onClick={() => deleteToDo(toDo.id)}>Delete</button>
+        {toDo.map((item) => (
+          <li key={item.id} className={item.done ? 'completed' : ''}>
+            <span onClick={() => toggleDone(item.id)}>{item.task}</span>
+            <button className="addbutton" onClick={() => deleteToDo(item.id)}>
+              Delete
+            </button>
           </li>
         ))}
       </ul>

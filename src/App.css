@@ -33,9 +33,13 @@ h1 {
     display: flex;
     align-items: center;
 }
+.toDoList li.completed span {
+  text-decoration: line-through;
+}
 
-.toDoList li.done span {
-  text-decoration: line-through; /* Add line-through for items with the "done" class */
+
+.done {
+  text-decoration: line-through;
 }
 
 button {
